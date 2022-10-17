@@ -13,6 +13,10 @@ const Orders = () => {
         dataSource={ordersData}
         allowPaging
         allowSorting
+        allowExcelExport
+        allowPdfExport
+        contextMenuItems={contextMenuItems}
+        editSettings={{ allowDeleting: true, allowEditing: true }}
       >
         <ColumnsDirective>
           {ordersGrid.map((item, index) => (
