@@ -11,6 +11,7 @@ const Employees = () => {
       <GridComponent
         dataSource={employeesData}
         allowPaging
+        allowSorting
         toolbar={['Search']}
         width="auto"
       >
