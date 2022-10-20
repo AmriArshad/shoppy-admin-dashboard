@@ -8,7 +8,6 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Ka
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
-import { themeColors } from './data/dummy';
 
 const App = () => {
   const { activeMenu, themeSettings, setThemeSettings, currentColour, currentMode } = useStateContext();
