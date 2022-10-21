@@ -543,7 +543,7 @@ export const links = [
         icon: <RiStockLine />,
       },
       {
-        name: 'color-mapping',
+        name: 'colour-mapping',
         icon: <BsBarChart />,
       },
       {
