@@ -19,7 +19,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize, currentColour } = useStateContext();
+  const { activeMenu, setActiveMenu, isClicked, handleClick, screenSize, setScreenSize, currentColour } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -35,10 +35,9 @@ const Navbar = () => {
     } else setActiveMenu(true);
   }, [screenSize]);
 
-
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
-      <NavButton title="Menu" customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} color={currentColour} icon={<AiOutlineMenu />} />
+      <NavButton title="Menu" customFunc={() => {setActiveMenu(!activeMenu)}} color={currentColour} icon={<AiOutlineMenu />} />
 
       <div className="flex">
         <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColour} icon={<FiShoppingCart />} />

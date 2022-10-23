@@ -35,6 +35,7 @@ export const ContextProvider = ({ children }) => {
   return (
     <StateContext.Provider
       value={{
+        initialState,
         activeMenu,
         setActiveMenu,
         isClicked,
