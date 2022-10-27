@@ -1,8 +1,8 @@
 {
-  "name": "admin_dashboard",
+  "name": "shoppy_admin_dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://amriarshad.github.io/admin-dashboard/",
+  "homepage": "https://amriarshad.github.io/shoppy-admin-dashboard/",
   "dependencies": {
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",
